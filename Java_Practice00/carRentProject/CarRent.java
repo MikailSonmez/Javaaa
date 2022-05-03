@@ -1,4 +1,4 @@
-package carRentprojesi1;
+package carRentProject;
 
 public class CarRent {
 

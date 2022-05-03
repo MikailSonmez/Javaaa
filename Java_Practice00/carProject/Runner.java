@@ -1,4 +1,4 @@
-package arabaprojesi1;
+package carProject;
 
 public class Runner {
 

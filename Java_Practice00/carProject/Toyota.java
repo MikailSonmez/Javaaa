@@ -1,4 +1,4 @@
-package arabaprojesi1;
+package carProject;
 
 public class Toyota extends Car {
 

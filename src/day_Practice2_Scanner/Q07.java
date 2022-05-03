@@ -1,0 +1,35 @@
+package day_Practice2_Scanner;
+
+import java.util.Scanner;
+
+public class Q07 {
+	
+	public static void main(String[] args) {
+		/*
+		 Kullanicidan kilosunu ve boyunu alip
+		 Vucut kitle indeksini hesaplayan bir program yaziniz.
+		 Ipucu : Vucut 
+		 Kitle Indeksi (VKI) = Vucut Agirligi(kg.) / Boy uzunlugunun karesi (m.)
+		 ORNEK:
+		 INPUT      : Kilo: 71
+		                   Boy: 1,72
+		 OUTPUT  : Vucut Kitle Indeksiniz : 23
+		 	 */
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Lutfen kg olarak vucut agirliginizi giriniz");
+		int agirlik = scan.nextInt();
+		
+		System.out.println("Lutfen cm olarak boyunuzu giriniz");
+		double uzunluk = scan.nextDouble();
+		
+		uzunluk = uzunluk / 100; // uzunluk/=100
+		
+		double vke = agirlik / (uzunluk * uzunluk);
+		
+		System.out.println("vucut kitle indeksi (VKI) = " + vke);
+		
+		scan.close();
+	}
+}
